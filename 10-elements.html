@@ -8,16 +8,16 @@
 <body>
     <form action="https://www.google.com" method="get">
         <label for="NameTag">First name</label>
-        <input type="text" name="Name" placeholder="Enter your name here" id="NameTag"><br><br>
+        <input type="text" name="Name" required placeholder="Enter your name here" id="NameTag"><br><br>
         <label for="Password">Password</label>
-        <input type="password" name="Password" placeholder="Enter your password here" id="Password"><br><br>
+        <input type="password" minlength="8" maxlength="16" name="Password" placeholder="Enter your password here" id="Password"><br><br>
         <label for="Colour">Colour</label>
         <input type="color" name="Colour" id="Colour"><br><br>
         <br>
         <label for="Accept">Accept?</label>
         <input type="checkbox" name="Accept" id="Accept"><br><br>
-        <label for="Age">Age</label>
-        <input type="number" name="Age" id="Age"><br><br>
+        <label  for="Age">Age</label>
+        <input min="1" max="99"  type="number" name="Age" id="Age"><br><br>
         <label for="website">Website</label>
         <input type="url" name="website" id=""><br><br>
         <label for="search">Search</label>
